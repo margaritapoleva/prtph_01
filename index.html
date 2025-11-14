@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка сайта с нуля</title>
+    <meta property="og:title" content="Верстка сайта с нуля" />
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:description" content="Верстка сайта с нуля">
+    <meta name="description" content="Верстка сайта с нуля">
+    
+    
+    <link rel="shortcut icon" href="logotip.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+
+body{
+    margin: 0;
+    direction: ltr;
+    font-family: 'Arsenal', sans-serif !important;   
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.central-block {
+  width: 100%;
+  padding-right: 19px;
+  padding-left: 19px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  border: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title, .fmeetb-title, .ab-ex-title, .critiques-title, .our-expert-title, .cf-causes-title, .main-chapter-title, .assets-title, .pol-title {
+    margin: 0;
+    margin-bottom:  41px;
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: inherit;
+    letter-spacing: -1.1px;
+    line-height: 1.18;
+}
+
+.flexbox, .closing-section-cont, .closing-section-navigation, .closing-section-namecol, .cs-namecol-logo, .startview-site, .startview-navigtn, .startview-logo, .startview-cont, .first-meeting-banner, .about-experience, .ab-ex-statlist, .ab-ex-statitem, .critiques-list, .critiques-item, .our-expert-person-wrapper, .our-expert-team, .causes-form-block, .cf-causes-item, .assets-flexbox, .closing-section, .closing-section-navcol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.startview-bgimg {
+  background-image: url(bg/0_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.startview-bgcolor {
+  background-color: #000957b0;
+}
+
+.startview-block {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.startview-site {
+    flex-direction: row-reverse;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    justify-content: space-between;
+    gap: 19px;
+}
+
+.startview-cont {
+  flex-direction: row-reverse;
+  gap: 11px;
+}
+
+.startview-contimg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e3e3;
+}
+
+.startview-contimg svg {
+  width: 28px;
+  height: 28px;
+  fill: #000957;
+}
+
+.startview-cont a {
+  white-space: break-spaces;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.startview-logo, .cs-namecol-logo {
+  gap: 11px;
+}
+
+.startview-logo img, .cs-namecol-logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.startview-logo h3, .cs-namecol-logo h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.startview-navigtn {
+  background-color: #ffffff;
+}
+
+.startview-navigtn a {
+  padding: 9px 11px;
+  background-color: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: inherit;
+  line-height: normal;
+  position: relative;
+  transition: all 500ms ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.startview-navigtn a::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #009A44;
+ transform: translateY(-100%);
+ transition: all 500ms ease;
+ z-index: -1;
+}
+
+.startview-navigtn a:hover {
+  color: #ffffff;
+}
+
+.startview-navigtn a:hover::before {
+ transform: translateY(0);
+}
+
+.first-meeting-banner-bgcolor {
+  direction: ltr;
+  background-color: #040807;
+}
+
+.first-meeting-banner-bgopas {
+  background: url(bg/0_opacity.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first-meeting-banner {
+  gap: 41px;
+}
+
+.fmeetb-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fmeetb-decor {
+  width: 47%;
+  height: 550px;
+  position: relative;
+}
+
+.fmeetb-decor-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 470px;
+    background-color: #009A44;
+    border-radius: 1000px 1000px 0px 0px;
+}
+
+.fmeetb-decor-bg::after {
+    background-image: url(bg/1_opacity.png);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    border-radius: 1000px 1000px 0px 0px;
+}
+
+.fmeetb-title {
+  font-size: 26px;
+  margin-bottom: 27px;
+}
+
+.fmeetb-btn {
+  display: flex;
+  margin: auto;
+}
+
+.fmeetb-decor-hero {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 500px;
+}
+
+.fmeetb-decor-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fmeetb-decor-circle {
+    position: relative;
+    margin-left: auto;
+    background-color: #009A44;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    top: 27px;
+}
+
+.fd-circle-txt {
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    left: 12%;
+    display: block;
+    overflow: visible;
+    width: 130px;
+    font-size: 7px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+    fill: #ffffff;
+    animation: circletxt 10s linear infinite;
+}
+
+@keyframes circletxt {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.fd-circle-txt path {
+  fill: none;
+}
+
+svg.fd-circle-dot {
+    fill: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+}
+
+.fmeetb-decor-pic {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  width: 100px;
+  height: 130px;
+  object-fit: contain;
+  animation: zump 2s linear infinite;
+}
+
+@keyframes zump {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+.dark-body {
+  background-color: #040807;
+}
+
+.about-experience  {
+  flex-direction: row-reverse;
+  gap:  41px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.ab-ex-decor {
+  position: relative;
+  width: 47%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ab-ex-decor-bigimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ab-ex-decor-lilimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 35%;
+    object-fit: cover;
+    border-bottom: 8px solid #000;
+    border-left: 8px solid #000;
+}
+
+.ad-ex-decor-stat {
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  min-height: 35%;
+  border-top: 8px solid #000;
+  border-right: 8px solid #000;
+  display: flex;
+  align-items: center;
+  background-color: #009A44;
+}
+
+.adexd-stat-item {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding:  5px;
+    background-color: #000957;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+}
+
+.adexd-stat-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    font-size: 26px;
+    color:  #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.9px;
+    text-transform: uppercase;
+}
+
+
+.ab-ex-content {
+  width: 48%;
+  display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.ab-ex-title {
+  margin-bottom: 41px;
+}
+
+.ab-ex-txt {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 41px;
+}
+
+.ab-ex-statlist {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 19px;
+  padding: 0 19px;
+}
+
+.ab-ex-statitem {
+  flex-direction: row-reverse;
+  gap: 11px;
+  justify-content: start;
+  width: 40%;
+}
+
+
+.ab-ex-statitem-pic, .causes-count {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    transition: all 500ms ease;
+}
+
+.ab-ex-statitem:hover .ab-ex-statitem-pic::after, .cf-causes-item:hover .causes-count::after  {
+    bottom: -50%;
+}
+
+.ab-ex-statitem-pic::after, .causes-count::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 150%;
+    background-color: #000957;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    border-radius: 50%;
+}
+
+.ab-ex-statitem-pic svg, .causes-count svg {
+  width: 28px;
+  height: 28px;
+  fill: #000957;
+}
+
+.ab-ex-statitem:hover .ab-ex-statitem-pic svg, .cf-causes-item:hover .causes-count svg {
+  fill: #ffffff;
+}
+
+.ab-ex-statitem-data {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.critiques-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.critiques-title {
+  margin-bottom: 41px;
+}
+
+.critiques-list {
+  flex-direction: row-reverse;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.critiques-item {
+  width: 48%;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+}
+
+.critiques-comment {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 19px;
+  width: -webkit-fill-available;
+  border: 1px solid #ffffff4d;
+  border-bottom: none;
+  background-color: #000957;
+  padding: 27px 27px 22px;
+}
+
+.critiques-quote {
+  display: flex;
+  justify-content: end;
+}
+
+.critiques-quote svg {
+    width: 58px;
+    height: 43px;
+    fill: #040807;
+    transition: all 500ms ease;
+}
+
+.critiques-item:hover .critiques-quote svg {
+  fill: #009A44;
+}
+
+.critiques-comment p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: #ffffff;
+} 
+
+.critiques-autor-bg {
+    background-color: #009A44;
+    width: -webkit-fill-available;
+}
+
+.critiques-autor-op {
+    background-image: url(bg/2_opacity.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: -webkit-fill-available;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    z-index: 1;
+    padding: 19px;
+    overflow: hidden;
+}
+
+.critiques-autor-pic {
+    width: 45px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.critiques-autor-pic::after {
+    content: "";
+    width: calc(100% + 8px);
+    height: 150px;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border-radius: 1000px 1000px 0px 0px;
+    transition: all 400ms ease;
+    z-index: -1;
+}
+
+.critiques-autor-pic img {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.critiques-item:hover .critiques-autor-pic::after {
+    height: calc(100% + 8px);
+    border-radius: 1000px;
+}
+
+.critiques-autor-name p {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: inherit;
+    margin-bottom: -5px;
+}
+
+.our-expert-bgimg {
+  background-image: url(bg/1_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-expert-bgop {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #000957cc;
+}
+
+.our-expert-title {
+  margin-bottom;: 41px;
+}
+
+.our-expert-team {
+  flex-direction: row-reverse;
+  gap: 27px;
+}
+.our-expert-person {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    padding: 27px 27px 22px;
+    background-color: transparent;
+    border: 1px solid #ffffff4d;
+    transition: all 400ms ease;
+}
+
+.our-expert-person:hover {
+    border-color: transparent;
+}
+
+.our-expert-person-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, #009A44 0%, rgba(168, 31, 35, 0) 100%);
+    transition: all 500ms ease;
+}
+
+.our-expert-person:hover .our-expert-person-bg {
+    top: 0;
+    height: 100%;
+}
+
+.our-expert-person-wrapper {
+  position: relative;
+  z-index: 2;
+  flex-direction: column-reverse;
+}
+
+.our-expert-person-img {
+  width: 100%;
+  height: 242px;
+}
+
+.our-expert-person-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-expert-person-name {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.our-expert-person-name h5 {
+  font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    text-transform: inherit;
+    margin: 10px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.our-expert-person-name span {
+    margin: 9px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-transform: inherit;
+}
+
+.causes-form-bg {
+  background-image: url(bg/2_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 41px 0;
+}
+
+.causes-form-block {
+  flex-direction: row-reverse;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  gap: 41px;
+  backdrop-filter: contrast(20%);
+  border-radius: 3px;
+}
+
+.cf-causes {
+  width: 47%;
+}
+
+
+.cf-form {
+  position: relative;
+  width: 47%;
+}
+
+.cf-form-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  position: relative;
+  backface-visibility: hidden;
+  padding: 24px;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.cf-form-title {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 9px;
+  color: #ffffff;
+}
+
+.input-q7906526, .textarea-q7906526 {
+  width: 100%;
+  min-height: 45px;
+  color: #ffffff;
+  outline: none;
+  transition: 0.35s;
+  padding: 0px 7px;
+  background-color: #212121;
+  border-radius: 3px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+
+.input-q7906526::placeholder, .textarea-q7906526::placeholder {
+  color: #ffffff;
+}
+
+.input-q7906526:focus.input-q7906526::placeholder, .textarea-q7906526:focus.textarea-q7906526::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.input-q7906526:focus, .textarea-q7906526:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.cf-form-body label {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.cf-form-checker {
+  margin: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.cf-form-checker input {
+  width: 20px;
+  height: 20px;
+}
+
+.cf-form-checker label {
+  margin: 0;
+}
+
+.cf-causes-item {
+  gap: 11px;
+}
+
+.cf-causes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+ }
+
+.cf-causes-item p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: inherit;
+    margin-bottom: 9px;
+    color: #ffffff;
+}
+
+.main-chapter {
+  padding: 85px;
+  margin-top: 41px;
+  margin-bottom: 41px;
+  position: relative;
+  border: 1px solid #ffffff4d;
+}
+
+.main-chapter-img {
+    width: 50%;
+    height: auto;
+    max-height: 575px;
+    object-fit: contain;
+    margin: 19px;
+    float: left;
+}
+
+.main-chapter-price {
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  right: 73px;
+  display: flex;
+}
+
+.mc-price-txt {
+    width: 40%;
+    padding: 11px;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: inherit;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    background-color: #000957;
+}
+
+.mc-price-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.9px;
+    text-transform: inherit;
+    background-color: #009A44;
+}
+
+.main-chapter-txt {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.assets-bgvideo {
+  width: 100%;
+  height: 455px;
+}
+
+.assets-bgvideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.assets-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.assets-bgcolor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 41px;
+  margin-bottom: 41px;
+  background-color: #040807e0;
+}
+
+.assets-flexbox {
+  gap: 22px;
+}
+
+.assets-card {
+  position: relative;
+  padding-top: 210px;
+  flex: 0 0 auto;
+  width: 24%;
+}
+
+.assets-card-first {
+  flex-direction: row-reverse;
+  position: relative;
+  background-color: #009A44;
+  display: flex;
+  justify-content: space-between;
+}
+
+.assets-card-first-img {
+  padding: 11px 22px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.assets-card-first-img img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.assets-card-first-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 39px;
+}
+
+.assets-card-second {
+    position: relative;
+    background-color: #009A44;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.assets-card:hover .assets-card-second {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.assets-card-inner {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 27px 19px 22px;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.closing-section-bg {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #009A44cc;
+}
+
+.closing-section-wrapper {
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.closing-section {
+  direction: ltr;
+  padding: 19px 0;
+  gap: 41px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.closing-section-namecol {
+  width: 35%;
+  flex-direction: column-reverse;
+  gap: 22px;
+  border-right: 2px solid #ffffff;
+  padding: 0 11px;
+}
+
+.closing-section-navigation, .closing-section-cont {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  width: 48%;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.closing-section-navigation h5, .closing-section-cont h5 {
+  margin: 0;
+  margin-bottom: 19px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.closing-section-navigation a, .closing-section-cont a {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.closing-section-navcol {
+  width: 63%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.rnd-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.button-1 {
+  padding: 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: rgb(17, 17, 17);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.button-1:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #ffffffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowsubbtn 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button-1:active {
+  color: #000
+}
+
+.button-1:active:after {
+  background: transparent;
+}
+
+.button-1:hover:before {
+  opacity: 1;
+}
+
+.button-1:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowsubbtn {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+.button-2 {
+  --bg: #6a6060;
+  --hover-bg: #009A44;
+  --hover-text: #000;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button-2:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button-2:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.button-3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #000957;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #000957;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button-3:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #000957;
+  z-index: -1;
+}
+
+.button-3:hover, .button-3:focus {
+  color: white;
+}
+
+.button-3:hover:before, .button-3:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button-3:active {
+  transform: scale(0.9);
+}
+
+.button-4 {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000957;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #000957;
+}
+
+.button-4:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button-4::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000957;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-4:hover::before {
+  width: 250%;
+}
+
+.button-5 {
+ padding: 0.6em 1em;
+ border: 4px solid #000957;
+ transition: ease-in-out 0.3s;
+ background-color: transparent;
+ color: #fff;
+ font-weight: bolder;
+ font-size: 16px;
+}
+
+.button-5:hover {
+  color: white;
+ transform: scale(1.2) rotate(-5deg);
+ background-color: #000957;
+}
+
+
+@media (max-width: 1200px) {
+
+  .central-block {
+  max-width: 1140px;
+}
+
+}
+
+@media (max-width: 992px) {
+
+  .central-block {
+  max-width: 960px;
+}
+
+.startview-site {
+  flex-wrap: wrap;
+}
+
+.startview-logo h3, .cs-namecol-logo h3 {
+  margin: 0;
+}
+
+.startview-cont a {
+  font-size: 14px;
+}
+
+.startview-logo h3, .cs-namecol-logo h3 {
+  font-size: 22px;
+}
+
+
+.fmeetb-title {
+  font-size: 22px;
+}
+
+.fmeetb-decor-hero {
+  height: 300px;
+}
+
+.fmeetb-decor-bg {
+  height: 350px;
+}
+
+.fmeetb-decor {
+  height: 370px;
+}
+
+.fmeetb-decor-circle {
+  display: none;
+}
+
+.ab-ex-statitem-data {
+  font-size: 12px;
+}
+
+.adexd-stat-amount {
+  font-size: 18px;
+}
+
+.adexd-stat-item {
+  font-size: 10px;
+}
+
+.title, .fmeetb-title, .ab-ex-title, .critiques-title, .our-expert-title, .cf-causes-title, .main-chapter-title, .assets-title {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.assets-card-inner {
+  font-size: 0.7em;
+}
+
+.mc-price-data {
+  font-size: 20px;
+}
+
+.main-chapter {
+  padding: 60px 30px;
+}
+
+.mc-price-txt {
+  font-size: 10px;
+}
+
+.cf-form-title {
+  margin: 0;
+  font-size: 14px;
+}
+
+.critiques-autor-name p {
+  font-size: 16px;
+}
+
+.critiques-autor-op {
+  padding: 10px;
+}
+
+.critiques-comment {
+  padding: 15px;
+}
+
+.about-experience, .critiques-section, .our-expert-bgop {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.our-expert-person-name h5 {
+  font-size: 14px;
+}
+
+.our-expert-person-name span {
+  font-size: 12px;
+}
+
+.our-expert-person-img {
+  height: 150px;
+}
+
+.critiques-quote svg {
+  width: 30px;
+  height: 30px;
+}
+
+.closing-section{
+  gap: 20px;
+}
+
+.closing-section-navigation, .closing-section-cont {
+  font-size: 12px;
+}
+
+.fmeetb-title {
+  font-size: 18px;
+}
+
+
+}
+
+@media(max-width: 767px)  {
+
+  .central-block {
+    max-width: 720px;
+  }
+
+  .startview-contimg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .startview-contimg svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .startview-navigtn a {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+
+  .assets-flexbox {
+    flex-wrap: wrap;
+  }
+
+  .assets-card {
+    padding-top: 0;
+    width: 44%;
+  }
+
+  .assets-card-first {
+    display: none;
+  }
+
+  .assets-card-second {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px);
+  }
+
+  .assets-card-inner {
+    padding: 15px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .assets-card-first-img img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-experience {
+    flex-direction: column;
+  }
+
+  .ab-ex-content {
+    width: 100%;
+  }
+
+  .ab-ex-decor {
+    width: 100%;
+  }
+
+  .main-chapter-txt {
+    font-size: 14px;
+  }
+
+  .main-chapter-img {
+    max-height: 300px;
+  }
+
+  .our-expert-team {
+    flex-direction: column;
+  }
+
+  .our-expert-person {
+    width: 100%;
+  }
+
+  .our-expert-person-wrapper {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .our-expert-person-img {
+    width: 30%;
+  }
+
+  .causes-form-block {
+    flex-direction: column;
+  }
+
+  .cf-causes, .cf-form {
+    width: 100%;
+  }
+
+  .closing-section-navcol {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .closing-section-navigation, .closing-section-cont {
+    width: 100%;
+  }
+
+  .closing-section-navigation h5, .closing-section-cont h5 {
+    margin: 0;
+  }
+
+
+}
+
+@media(max-width: 576px) {
+
+  .central-block {
+    max-width: 540px;
+  }
+
+  .startview-navigtn {
+    flex-wrap: wrap;
+  }
+
+  .first-meeting-banner {
+    flex-direction: column-reverse;
+  }
+
+  .fmeetb-decor, .fmeetb-text, .fmeetb-decor, .ab-ex-statitem, .assets-card, .closing-section-namecol, .closing-section-navcol {
+    width: 100%;
+  }
+
+  .main-chapter-img {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .our-expert-person-wrapper {
+    flex-direction: column;
+  }
+
+  .our-expert-person-img {
+    width: 100%;
+  }
+
+  .ab-ex-statitem {
+    justify-content: space-between;
+  }
+
+  .closing-section {
+    flex-direction: column;
+  }
+
+  .assets-bgvideo {
+    height: 630px;
+  }
+
+  .assets-card-inner {
+    gap: 10px;
+  }
+
+  .assets-card-first-img {
+    padding: 0;
+  }
+
+  .ad-ex-decor-stat {
+    flex-direction: column;
+  }
+
+  .adexd-stat-item {
+    width: 100%;
+    writing-mode: initial;
+    transform: rotate(0deg);
+    font-size: 12px;
+  }
+
+  .adexd-stat-amount {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    display: flex;
+    margin: auto;
+  }
+
+  .closing-section-namecol {
+    border-right: none;
+  }
+
+  .startview-cont a {
+    font-size: 12px;
+  }
+
+  .assets-card-first-img {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+    </style>
+
+    
+</head>
+
+
+<body>
+
+    <header>
+      <div class="startview-bgimg">
+        <div class="startview-bgcolor">
+          <div class="central-block startview-block">
+            <div class="startview-site">
+              <div class="startview-cont">
+                <div class="startview-contimg">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                </div>
+                <a href="tel:+380 48 747 3200">+380 48 747 3200</a>
+              </div>
+              <a class="startview-logo" href="./">
+                <img src="logotip.svg"  alt="">
+                <h3>Business Mix</h3>
+              </a>
+              <div class="startview-cont">
+                <div class="startview-contimg">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </div>
+                <a href="mailto:client-support_companyname@mail.com">client-support_companyname@mail.com</a>
+              </div>
+            </div>
+            <div class="startview-navigtn Ywypwx">
+              <a class="stvw-nvlink" href="./">Дім</a>
+              <a class="stvw-nvlink" href="./#about">
+                Про нас
+              </a>
+              <a class="stvw-nvlink" href="./#assets">
+                Наші переваги
+              </a>
+              <a class="stvw-nvlink" href="./#team">
+                Наші люди
+              </a>
+              <a class="stvw-nvlink" href="./#comment">
+                  Коментарі
+              </a>
+              <a class="stvw-nvlink" href="./#adres">
+                Контакти
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="first-meeting-banner-bgcolor">
+        <div class="first-meeting-banner-bgopas">
+          <div class="central-block first-meeting-banner">
+            <div class="fmeetb-text">
+              <h2 class="fmeetb-title"> Ласкаво просимо до CompanyName! Ваша довіра та підтримка – основа нашого успіху та натхнення.</h2>
+              
+            </div>
+            <div class="fmeetb-decor">
+              <div class="fmeetb-decor-bg"></div>
+              <div class="fmeetb-decor-hero">
+                <img src="bg/0_vectimg.svg" alt="">
+              </div>
+              <div class="fmeetb-decor-circle">
+                <svg class="fd-circle-txt" viewBox="0 0 100 100">
+                  <path id="circle" d="M 0,50 a 50,50 0 1,1 0,1 z" />
+                  <text>
+                    <textPath xlink:href="#circle">
+                      Спроектований і побудований з усією любов'ю світу! &nbsp; &bull; &nbsp;
+                    </textPath>
+                  </text>
+                </svg>
+                <svg class="fd-circle-dot" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-280q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+              </div>
+              <img class="fmeetb-decor-pic" src="bg/1_vectimg.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </header>
+     
+
+    <div class="dark-body">
+      <div class="rnd-wrapper">
+        
+        <div id="about" class="central-block about-experience URnhdLkX5">
+          <div class="ab-ex-decor">
+            <img class="ab-ex-decor-bigimg" src="gallery/0-gallery.jpg " alt="">
+            <img class="ab-ex-decor-lilimg" src="gallery/1-gallery.jpg " alt="">
+            <div class="ad-ex-decor-stat">
+              <div class="adexd-stat-item"> 
+                <p>Задоволених клієнтів</p>
+              </div>
+              <div class="adexd-stat-amount">
+                <span>+72602</span>
+              </div>
+            </div>
+          </div>
+          <div class="ab-ex-content">
+            <div>
+              <h2 class="ab-ex-title">Про нас</h2>
+              <div class="ab-ex-txt">
+                Організована група людей, які поділяють спільне бачення. Ми виділяємося як лідери галузі. Ми вирішуємо проблеми наших клієнтів прямо на очах. Наша мета - допомогти кожному клієнту досягти поставлених цілей.
+              </div>
+            </div>
+
+            <div class="ab-ex-statlist">
+              <div class="ab-ex-statitem">
+                <div class="ab-ex-statitem-pic">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM253-253l227-227v-320q-134 0-227 93t-93 227q0 64 24 123t69 104Z"/></svg>
+                </div>
+                <div class="ab-ex-statitem-data">
+                  <span>+48991</span>
+                  <p>Професійні агенти</p> 
+                </div> 
+              </div>
+              <div class="ab-ex-statitem">
+                <div class="ab-ex-statitem-pic">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z"/></svg>
+                </div>
+                <div class="ab-ex-statitem-data">
+                  <span>+60386</span>
+                  <p>Оброблені заявки</p> 
+                </div> 
+              </div>
+              <div class="ab-ex-statitem">
+                <div class="ab-ex-statitem-pic">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                </div>
+                <div class="ab-ex-statitem-data">
+                  <span>+25885</span>
+                  <p>Виконані запити</p> 
+                </div>
+              </div>
+              <div class="ab-ex-statitem">
+                <div class="ab-ex-statitem-pic">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M718-313 604-426l57-56 57 56 141-141 57 56-198 198ZM440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Z"/></svg>
+                </div>
+                <div class="ab-ex-statitem-data">
+                  <span>+33535</span>
+                  <p>Успішно реалізовані проекти</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="assets" class="assets-bg U2KxiWFl">
+          <div class="assets-bgvideo">
+            <video src="video/0-video.mp4" autoplay="" muted="muted" loop=""></video>
+          </div>
+          <div class="assets-bgcolor">
+            <div class="central-block assets-block">
+              <h2 class="assets-title">Наші переваги</h2>
+              <div class="assets-flexbox">
+                <div class="assets-card">
+                  <div class="assets-card-first">
+                    <div class="assets-card-first-img">
+                      <img src="images/0.svg" alt="">
+                    </div>
+                    <div class="assets-card-first-plus">+</div>
+                  </div>
+                  <div class="assets-card-second">
+                    <div class="assets-card-inner">
+                      <div class="assets-card-first-img">
+                        <img src="images/0.svg" alt="">
+                      </div>
+                      Захист інтелектуальної власності: надійна система захисту прав інтелектуальної власності, включаючи патенти та авторські права, яка забезпечує правовий захист інновацій компанії.
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-card">
+                  <div class="assets-card-first">
+                    <div class="assets-card-first-img">
+                      <img src="images/2.svg" alt="">
+                    </div>
+                    <div class="assets-card-first-plus">+</div>
+                  </div>
+                  <div class="assets-card-second">
+                    <div class="assets-card-inner">
+                      <div class="assets-card-first-img">
+                        <img src="images/2.svg" alt="">
+                      </div>
+                      Інтегровані рішення: Пропозиція комплексних рішень, які поєднують послуги для забезпечення комплексного задоволення клієнтів у різних галузях.
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-card">
+                  <div class="assets-card-first">
+                    <div class="assets-card-first-img">
+                      <img src="images/4.svg" alt="">
+                    </div>
+                    <div class="assets-card-first-plus">+</div>
+                  </div>
+                  <div class="assets-card-second">
+                    <div class="assets-card-inner">
+                      <div class="assets-card-first-img">
+                        <img src="images/4.svg" alt="">
+                      </div>
+                      Використання зворотного зв'язку для вдосконалення: постійний аналіз і використання відгуків від клієнтів, співробітників і партнерів для постійного вдосконалення продуктів, послуг і процесів.
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-card">
+                  <div class="assets-card-first">
+                    <div class="assets-card-first-img">
+                      <img src="images/6.svg" alt="">
+                    </div>
+                    <div class="assets-card-first-plus">+</div>
+                  </div>
+                  <div class="assets-card-second">
+                    <div class="assets-card-inner">
+                      <div class="assets-card-first-img">
+                        <img src="images/6.svg" alt="">
+                      </div>
+                      Розвиток співробітників: Постійне навчання та розвиток навичок співробітників для підтримки високого рівня професіоналізму та адаптації до нових технологій та способів роботи.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="central-block ">
+        <div class="main-chapter">
+          <h2 class="main-chapter-title">Верстка сайта с нуля</h2>
+        <div class="main-chapter-content">
+          <img class="main-chapter-img" src="in_note-1_white_03_new22.png" alt="Верстка сайта с нуля">
+          <div class="main-chapter-txt">
+            <p>Чтобы перенести полет фантазии дизайнера в веб, необходимо воспользоваться услугами верстальщиков и программистов. Мы в Artjo знаем, какой должна быть верстка, чтобы привлечь покупателей и повысить прибыль компании. Вы можете заказать услугу &laquo;верстка веб сайтов с нуля на заказ&raquo; прямо сейчас и получить код, который отлично работает в любых браузерах и на любых экранах.</p>
+<h5>Этапы вёрстки сайта с нуля:</h5>
+<p><strong>Планирование</strong></p>
+<p>Профессиональная верстка сайта с нуля на заказ начинается с аналитики и составления технического задания. Наши специалисты согласовывают пожелания клиента и прописывают требования, которым должна соответствовать верстка макета сайта. Отдельное внимание мы уделяем SEO-аспектам, чтобы подготовить базу для дальнейшего продвижения. На этом этапе специалисты оценивают время и цены на услуги верстки.</p>
+<p><strong>Внедрение</strong></p>
+<ul>
+<li>Верстка веб страниц сайта должна точно соответствовать дизайну из PSD-макетов. Для этого наши специалисты используют технологии: HTML5, CSS3 и JavaScript. Для того, чтобы веб-ресурс правильно работал и приносил клиенту прибыль, мы учитываем следующие правила:</li>
+<li>быстрая скорость загрузки &mdash; корректный, чистый код обеспечит хорошие показатели и преимущество для продвижения;</li>
+<li>блочная вёрстка веб-страниц сайтов &mdash; более эффективный метод, чем табличный;</li>
+<li>кроссбраузерность &mdash; качественное отображение в любой браузере любой версии;</li>
+<li>адаптивная верстка сайта позволит открывать его на гаджетах с любым размером и разрешением экрана (мониторы, смартфоны, планшеты).</li>
+</ul>
+<p><strong>Тестирование</strong></p>
+<p>Дизайн-макеты, ТЗ и сверстанные файлы передаются тестировщикам для выявления багов. Они проверяют код, соответствие дизайну, скорость загрузки, кроссбраузерность и адаптивность. Этот этап позволяет проконтролировать качество, верстка многостраничного сайта доводится до совершенства.</p>
+<p><strong>Программирование</strong></p>
+<p>Разработчики Artjo помогут запрограммировать веб-ресурс и интегрировать его с CMS, которую вы используете. Таким образом, вы получаете не просто архив файлов, с которыми нужно еще что-то сделать, а рабочее решение.</p>
+          </div>
+        </div>
+        <div class="main-chapter-price">
+          <div class="mc-price-txt">
+            Ціна
+          </div>
+          <div class="mc-price-data">
+            926грн.
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="rnd-wrapper">
+        
+        <div id="team" class="our-expert-bgimg">
+          <div class="our-expert-bgop">
+            <div class="central-block">
+              <h2 class="our-expert-title">Наші люди</h2>
+              <div class="our-expert-team">
+                <div class="our-expert-person">
+                  <div class="our-expert-person-bg"></div>
+                  <div class="our-expert-person-wrapper">
+                    <div class="our-expert-person-name">
+                      <h5>Тимур Иванов</h5>
+                      <span>Менеджер зі зв'язків з інвесторами</span>
+                    </div>
+                    <div class="our-expert-person-img">
+                      <img src="avatar/m-0.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="our-expert-person">
+                  <div class="our-expert-person-bg"></div>
+                  <div class="our-expert-person-wrapper">
+                    <div class="our-expert-person-name">
+                      <h5>Ева Воробьева</h5>
+                      <span>Аудитор</span>
+                    </div>
+                    <div class="our-expert-person-img">
+                      <img src="avatar/w-0.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="our-expert-person">
+                  <div class="our-expert-person-bg"></div>
+                  <div class="our-expert-person-wrapper">
+                    <div class="our-expert-person-name">
+                      <h5>Илья Покровский</h5>
+                      <span>Рекламний агент</span>
+                    </div>
+                    <div class="our-expert-person-img">
+                      <img src="avatar/m-1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="comment" class="central-block critiques-section">
+          <h2 class="critiques-title">Коментарі</h2>
+          <div class="critiques-list">
+            <div class="critiques-item">
+              <div class="critiques-comment">
+                <div class="critiques-quote">
+                  <svg class="testimonials-three__card__quotes" viewBox="0 0 58 43">
+                    <path d="M50.2143 25.8V25.3H49.7143H41.4286C37.152 25.3 33.6429 21.685 33.6429 17.2V8.6C33.6429 4.115 37.152 0.5 41.4286 0.5H49.7143C53.9908 0.5 57.5 4.115 57.5 8.6V12.9V17.2V26.875C57.5 35.5256 50.7542 42.5 42.4643 42.5H41.4286C39.4306 42.5 37.7857 40.82 37.7857 38.7C37.7857 36.58 39.4306 34.9 41.4286 34.9H42.4643C46.7583 34.9 50.2143 31.2856 50.2143 26.875V25.8ZM17.0714 25.8V25.3H16.5714H8.28571C4.00915 25.3 0.5 21.685 0.5 17.2V8.6C0.5 4.115 4.00915 0.5 8.28571 0.5H16.5714C20.848 0.5 24.3571 4.115 24.3571 8.6V12.9V17.2V26.875C24.3571 35.5256 17.6114 42.5 9.32143 42.5H8.28571C6.28772 42.5 4.64286 40.82 4.64286 38.7C4.64286 36.58 6.28772 34.9 8.28571 34.9H9.32143C13.6154 34.9 17.0714 31.2856 17.0714 26.875V25.8Z"></path>
+                  </svg>
+                </div>
+                <p>Я дійсно вражений тим, наскільки добре працює сервіс, від замовлення до доставки. Все вчасно і без проблем.</p>
+              </div>
+              <div class="critiques-autor-bg">
+                <div class="critiques-autor-op">
+                  <div class="critiques-autor-pic">
+                    <img src="avatar/w-1.jpg" alt="">
+                  </div>
+                  <div class="critiques-autor-name">
+                    <p>Злата Осипова </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="critiques-item">
+              <div class="critiques-comment">
+                <div class="critiques-quote">
+                  <svg class="testimonials-three__card__quotes" viewBox="0 0 58 43">
+                    <path d="M50.2143 25.8V25.3H49.7143H41.4286C37.152 25.3 33.6429 21.685 33.6429 17.2V8.6C33.6429 4.115 37.152 0.5 41.4286 0.5H49.7143C53.9908 0.5 57.5 4.115 57.5 8.6V12.9V17.2V26.875C57.5 35.5256 50.7542 42.5 42.4643 42.5H41.4286C39.4306 42.5 37.7857 40.82 37.7857 38.7C37.7857 36.58 39.4306 34.9 41.4286 34.9H42.4643C46.7583 34.9 50.2143 31.2856 50.2143 26.875V25.8ZM17.0714 25.8V25.3H16.5714H8.28571C4.00915 25.3 0.5 21.685 0.5 17.2V8.6C0.5 4.115 4.00915 0.5 8.28571 0.5H16.5714C20.848 0.5 24.3571 4.115 24.3571 8.6V12.9V17.2V26.875C24.3571 35.5256 17.6114 42.5 9.32143 42.5H8.28571C6.28772 42.5 4.64286 40.82 4.64286 38.7C4.64286 36.58 6.28772 34.9 8.28571 34.9H9.32143C13.6154 34.9 17.0714 31.2856 17.0714 26.875V25.8Z"></path>
+                  </svg>
+                </div>
+                <p>Увага до деталей та якість продукції справді видатні. Продовжуй в тому ж дусі!</p>
+              </div>
+              <div class="critiques-autor-bg">
+                <div class="critiques-autor-op">
+                  <div class="critiques-autor-pic">
+                    <img src="avatar/m-2.jpg" alt="">
+                  </div>
+                  <div class="critiques-autor-name">
+                    <p>Артемий Попов </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="critiques-item" style="display: none;">
+              <div class="critiques-comment">
+                <div class="critiques-quote">
+                  <svg class="testimonials-three__card__quotes" viewBox="0 0 58 43">
+                    <path d="M50.2143 25.8V25.3H49.7143H41.4286C37.152 25.3 33.6429 21.685 33.6429 17.2V8.6C33.6429 4.115 37.152 0.5 41.4286 0.5H49.7143C53.9908 0.5 57.5 4.115 57.5 8.6V12.9V17.2V26.875C57.5 35.5256 50.7542 42.5 42.4643 42.5H41.4286C39.4306 42.5 37.7857 40.82 37.7857 38.7C37.7857 36.58 39.4306 34.9 41.4286 34.9H42.4643C46.7583 34.9 50.2143 31.2856 50.2143 26.875V25.8ZM17.0714 25.8V25.3H16.5714H8.28571C4.00915 25.3 0.5 21.685 0.5 17.2V8.6C0.5 4.115 4.00915 0.5 8.28571 0.5H16.5714C20.848 0.5 24.3571 4.115 24.3571 8.6V12.9V17.2V26.875C24.3571 35.5256 17.6114 42.5 9.32143 42.5H8.28571C6.28772 42.5 4.64286 40.82 4.64286 38.7C4.64286 36.58 6.28772 34.9 8.28571 34.9H9.32143C13.6154 34.9 17.0714 31.2856 17.0714 26.875V25.8Z"></path>
+                  </svg>
+                </div>
+                <p>Здатність компанії обслуговувати багатогранну клієнтуру є свідченням їх прихильності до інклюзивності та доступності.</p>
+              </div>
+              <div class="critiques-autor-bg">
+                <div class="critiques-autor-op">
+                  <div class="critiques-autor-pic">
+                    <img src="avatar/w-2.jpg" alt="">
+                  </div>
+                  <div class="critiques-autor-name">
+                    <p>Ксения Ушакова </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="critiques-item" style="display: none;">
+              <div class="critiques-comment">
+                <div class="critiques-quote">
+                  <svg class="testimonials-three__card__quotes" viewBox="0 0 58 43">
+                    <path d="M50.2143 25.8V25.3H49.7143H41.4286C37.152 25.3 33.6429 21.685 33.6429 17.2V8.6C33.6429 4.115 37.152 0.5 41.4286 0.5H49.7143C53.9908 0.5 57.5 4.115 57.5 8.6V12.9V17.2V26.875C57.5 35.5256 50.7542 42.5 42.4643 42.5H41.4286C39.4306 42.5 37.7857 40.82 37.7857 38.7C37.7857 36.58 39.4306 34.9 41.4286 34.9H42.4643C46.7583 34.9 50.2143 31.2856 50.2143 26.875V25.8ZM17.0714 25.8V25.3H16.5714H8.28571C4.00915 25.3 0.5 21.685 0.5 17.2V8.6C0.5 4.115 4.00915 0.5 8.28571 0.5H16.5714C20.848 0.5 24.3571 4.115 24.3571 8.6V12.9V17.2V26.875C24.3571 35.5256 17.6114 42.5 9.32143 42.5H8.28571C6.28772 42.5 4.64286 40.82 4.64286 38.7C4.64286 36.58 6.28772 34.9 8.28571 34.9H9.32143C13.6154 34.9 17.0714 31.2856 17.0714 26.875V25.8Z"></path>
+                  </svg>
+                </div>
+                <p>Ця компанія дійсно виділяється своєю спрямованістю на задоволення потреб клієнтів. Продовжуй в тому ж дусі!</p>
+              </div>
+              <div class="critiques-autor-bg">
+                <div class="critiques-autor-op">
+                  <div class="critiques-autor-pic">
+                    <img src="avatar/m-3.jpg" alt="">
+                  </div>
+                  <div class="critiques-autor-name">
+                    <p>Арсений Хохлов </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="causes-form-bg">
+          <div class="central-block causes-form-block">
+            <div class="cf-causes">
+              <h2 class="cf-causes-title"> Причини, які викликали у Вас інтерес до нашого сайту:</h2>
+              <ul class="cf-causes-list">
+                <li class="cf-causes-item">
+                  <div class="causes-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Zm-20 200h80v-400H380v80h80v320Z"/></svg>
+                  </div>
+                  <p>Ваше бажання полягає в тому, щоб досвідчені експерти допомогли вам знайти рішення для вашої ситуації.</p>
+                </li>
+                <li class="cf-causes-item">
+                  <div class="causes-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320ZM360-280h240v-80H440v-80h80q33 0 56.5-23.5T600-520v-80q0-33-23.5-56.5T520-680H360v80h160v80h-80q-33 0-56.5 23.5T360-440v160Z"/></svg>                </div>
+                  <p>Для вас важливо враховувати ваші унікальні потреби та адаптувати свої рішення до вас. </p>
+                </li>
+                <li class="cf-causes-item">
+                  <div class="causes-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320ZM360-280h160q33 0 56.5-23.5T600-360v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T520-680H360v80h160v80h-80v80h80v80H360v80Z"/></svg>                </div>
+                  <p>Ви хочете отримати найкраще співвідношення ціни та якості.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="cf-form">
+              <form class="cf-form-body" action="thx.html">
+                <h4 class="cf-form-title">Ви можете скористатися нашими послугами, написавши нам або зателефонувавши нам. Ми з радістю відповімо на будь-які питання і допоможемо замовити послуги!</h4>
+                <input class="input-q7906526" type="text" placeholder="Введіть своє ім'я" required><input class="input-q7906526" type="tel" placeholder="Введіть свій номер телефону" required><input class="input-q7906526" type="email" placeholder="Адреса електронної пошти" required>
+                <div class="cf-form-checker">
+                  <input class="" type="checkbox"   required="required">
+                  <label class="" for="">Я приймаю <a href="privacy.html" class="check">Політика конфіденційності</a></label>
+                </div>
+                <button class="button-2">Записатися на прийом до фахівця</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>      
+      
+
+    </div>
+
+
+    
+    <footer id="adres" class="closing-section-bg">
+      <div class="ftr-bottom-map">
+        <iframe src="https://maps.google.com/maps?hl=en&q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D0%BA%D0%B0%20%D0%93%D0%BB%D1%83%D1%88%D0%BA%D0%BE%D0%B2%D0%B0%2C%2013%D0%91%2C%20%D0%9A%D0%B8%D1%97%D0%B2%2C%20%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0%2C%2002000&ie=UTF8&t=&z=8&iwloc=B&output=embed" width="100%" height="182" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="central-block closing-section-wrapper">
+        <div class="closing-section">
+          <div class="closing-section-namecol">
+            <a class="cs-namecol-logo" href="./">
+              <img src="logotip.svg"  alt="">
+              <h3>Business Mix</h3>
+            </a>
+            <a  href="https://wa.me/+380487473200"> <button class="button-2"><i class="bi bi-whatsapp"></i>  &nbsp whatsapp</button> </a>
+          </div>
+          <div class="closing-section-navcol">
+            <div class="closing-section-navigation">
+              <h5>Навігації</h5>
+              <a class="" href="./">Дім</a>
+              <a href="privacy.html">Політика конфіденційності</a>
+              <a href="term.html">Правила та умови</a>
+              <a href="disclaimer.html">Застереження</a>
+            </div>
+            <div class="closing-section-cont">
+              <h5>Контакти</h5>
+              <p>ТОВ «ЛИВАЙН ТОРГ», Код ЕГРПОУ 41449359</p>
+              <p>проспект Академіка Глушкова, 13Б, Київ, Україна, 02000</p>
+              <a href="tel:+380 48 747 3200" style="color: #ffffff;"> +380 48 747 3200</a>
+              <a href="mailto:client-support_companyname@mail.com" style="color: #ffffff;">client-support_companyname@mail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+   
+    <style>
+    .x981m3 {
+      width: calc(100% - 60px);
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: left;
+      position: fixed;
+      bottom: 25px;
+      left: calc(50% - 15px);
+      transform: translateX(-50%);
+      max-width: 355px;
+      border-radius: 12px;
+      z-index: 3;
+      gap: 10px;
+      margin: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+  
+    .x981m3-message {
+      font-size: 14px;
+      display: inline-block;
+      word-wrap: break-word;
+      max-width: 100%;
+      color: rgb(69 81 90);
+      font-weight: 400;
+      opacity: .8;
+      padding: 25px;
+      text-align: center;
+    }
+  
+    .x981m3-message h1 {
+      font-size: 28px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-bottom: 10px;
+      color: #000;
+    }
+  
+    .cfl193 {
+      border: none;
+      cursor: pointer;
+      padding: 15px 15px;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
+      color: #fff;
+      white-space: nowrap;
+      font-weight: 500;
+      text-transform: uppercase;
+      border: 2px solid transparent;
+    }
+  
+    .xmnal3910msjd341-customize-btn {
+      background: transparent;
+      color: #000;
+    }
+  
+    .xmnal3910msjd341-agree-btn {
+      color: white;
+      background: #000957;
+    }
+  
+    .x981m3 > div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-top: 1px solid #ccc;
+    }
+  
+    .x981m3 > div > button {
+      flex: 1 1 50%;
+    }
+  
+    @media screen and (max-width: 420px) and (min-width: 320px) {
+        .x981m3-message {
+        font-size: 13px;
+      }
+      .x981m3-message{
+        padding: 10px;
+      }
+      .cfl193 {
+        padding: 15px 10px;
+      }
+      .x981m3-message h1{
+        font-size: 18px;
+      }
+    }
+  
+    .xmnal3910msjd341-options-panel {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      position: fixed;
+      bottom: 25px;
+      left: calc(50% - 15px);
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      z-index: 4;
+      border-radius: 10px;
+      max-width: 300px;
+      width: calc(100% - 60px);
+      margin: 0 15px;
+    }
+  
+    .xmnal3910msjd341-options-panel .center-text {
+      font-size: 19px;
+      font-weight: 600;
+    }
+  
+    .xmnal3910msjd341-options-panel label {
+      margin: 10px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 12px;
+    }
+  
+    .xmnal3910msjd341-options-panel label svg {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .xmnal3910msjd341-options-panel label > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"] {
+      display: none;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"] + .toggle {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      cursor: pointer;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"] + .toggle:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #ccc;
+      left: 2px;
+      transition: all 0.3s ease;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"]:checked + .toggle {
+      background-color: #009A44;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"]:checked + .toggle:before {
+      background-color: #009A44;
+    }
+  
+    .xmnal3910msjd341-submit-btn {
+      background: #000957;
+      color: #fff;
+    }
+  
+    .hidden {
+      display: none !important;
+    }
+  
+    .center-text {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 25px !important;
+    }
+  
+    .align-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .align-center button {
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+  </style>
+  
+  <div class="x981m3 hidden">
+    <span class="x981m3-message">
+      <h1>	Файл cookie!</h1>
+  
+      Ми використовуємо файли cookie, щоб покращити ваш досвід перегляду, проаналізувати відвідуваність сайту та надати персоналізовану рекламу. Продовжуючи переглядати або закриваючи цей банер, ви погоджуєтеся на використання файлів cookie. Дізнайтеся більше про те, як ми використовуємо файли cookie та як ви можете ними керувати, натиснувши «Налаштування».
+    </span>
+  
+    <div>
+      <button class="xmnal3910msjd341-customize-btn cfl193">Settings</button>
+      <button class="xmnal3910msjd341-agree-btn cfl193">
+  
+        Прийняти файли cookie</button>
+    </div>
+  </div>
+  <div class="xmnal3910msjd341-options-panel hidden">
+    <div class="center-text">	Налаштування файлів cookie</div>
+  
+    <label>
+      <div>
+        <input type="checkbox" checked class="xmnal3910msjd341-consent-checkbox" name="analytics">
+        Аналітика
+  
+        <span class="toggle"></span>
+      </div>
+  
+    </label>
+    <label>
+      <div>
+        <input type="checkbox" checked class="xmnal3910msjd341-consent-checkbox" name="preferences">
+        Налаштування
+  
+        <span class="toggle"></span>
+      </div>
+  
+    </label>
+    <label>
+      <div>
+        <input type="checkbox" checked class="xmnal3910msjd341-consent-checkbox" name="marketing">
+        Маркетингу
+  
+        <span class="toggle"></span>
+      </div>
+  
+    </label>
+  
+    <div class="align-center">
+      <button class="xmnal3910msjd341-submit-btn cfl193">Save</button>
+    </div>
+  </div>
+  
+  <script>
+    function encodeCookieData(name, data, expireDays) {
+      let expires = "";
+      if (expireDays) {
+        const date = new Date();
+        date.setTime(date.getTime() + (expireDays * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (data || "") + expires + "; path=/";
+    }
+  
+    function decodeCookieData(name) {
+      const cookieString = `${name}=`;
+      const cookiesArray = document.cookie.split(';').map(cookie => cookie.trim());
+      const foundCookie = cookiesArray.find(cookie => cookie.startsWith(cookieString));
+      return foundCookie ? decodeURIComponent(foundCookie.split('=')[1]) : '';
+    }
+  
+    function toggleElementVisibility(elementSelector) {
+      const element = document.querySelector(elementSelector);
+  
+      if (element) {
+        element.classList.toggle('hidden');
+      }
+    }
+  
+    function remElementVisibility(elementSelector) {
+      const element = document.querySelector(elementSelector);
+  
+      if (element) {
+        element.classList.add('hidden');
+      }
+    }
+  
+    function collectCheckedBoxes(selector) {
+      const checkboxes = Array.from(document.querySelectorAll(selector));
+      return checkboxes.filter(checkbox => checkbox.checked).map(checkbox => checkbox.name);
+    }
+  
+    function handlePrivacyConsent(action) {
+      const consentData = collectCheckedBoxes('.xmnal3910msjd341-consent-checkbox');
+      encodeCookieData("cookieVal_19954", JSON.stringify(consentData), 365);
+  
+      if (action === 'hide') {
+        remElementVisibility('.xmnal3910msjd341-options-panel');
+        remElementVisibility('.x981m3');
+      }
+    }
+  
+    document.querySelector('.xmnal3910msjd341-customize-btn').addEventListener('click', () => toggleElementVisibility('.xmnal3910msjd341-options-panel'));
+  
+    document.querySelector('.xmnal3910msjd341-submit-btn').addEventListener('click', () => {
+      remElementVisibility('.xmnal3910msjd341-options-panel');
+    });
+  
+    document.querySelector('.xmnal3910msjd341-agree-btn').addEventListener('click', () => handlePrivacyConsent('hide'));
+  
+  
+    const cookieCheckboxes = document.querySelectorAll('.xmnal3910msjd341-consent-checkbox')
+  
+    function saveCheckboxState() {
+      const checkboxesState = {};
+      cookieCheckboxes.forEach((input) => {
+        checkboxesState[input.name] = input.checked;
+      });
+      localStorage.setItem('checkboxesState', JSON.stringify(checkboxesState));
+    }
+  
+    cookieCheckboxes.forEach((input) => {
+      input.addEventListener('change', e => {
+        saveCheckboxState();
+      });
+    });
+  
+    function loadCheckboxState() {
+      const checkboxesState = JSON.parse(localStorage.getItem('checkboxesState'));
+      if (checkboxesState) {
+        cookieCheckboxes.forEach((input) => {
+          input.checked = checkboxesState[input.name] || false;
+        });
+      }
+    }
+  
+    document.addEventListener('DOMContentLoaded', loadCheckboxState);
+  
+    if (!decodeCookieData("cookieVal_19954")) {
+      toggleElementVisibility('.x981m3');
+      document.querySelector('.x981m3').classList.remove('hidden');
+    }
+  </script>
+
+    
+
+
+    
+
+    
+</body>
+</html>

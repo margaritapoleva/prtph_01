@@ -1,0 +1,2182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умови надання послуг</title>
+    <meta property="og:title" content="Умови надання послуг" />
+    <meta property="og:image" content="logotip.svg"/>
+    
+    <meta property="og:description" content="Умови надання послуг">
+    <meta name="description" content="Умови надання послуг">
+    
+
+    <link rel="shortcut icon" href="logotip.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+
+body{
+    margin: 0;
+    direction: ltr;
+    font-family: 'Arsenal', sans-serif !important;   
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.central-block {
+  width: 100%;
+  padding-right: 19px;
+  padding-left: 19px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  border: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title, .fmeetb-title, .ab-ex-title, .critiques-title, .our-expert-title, .cf-causes-title, .main-chapter-title, .assets-title, .pol-title {
+    margin: 0;
+    margin-bottom:  41px;
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: inherit;
+    letter-spacing: -1.1px;
+    line-height: 1.18;
+}
+
+.flexbox, .closing-section-cont, .closing-section-navigation, .closing-section-namecol, .cs-namecol-logo, .startview-site, .startview-navigtn, .startview-logo, .startview-cont, .first-meeting-banner, .about-experience, .ab-ex-statlist, .ab-ex-statitem, .critiques-list, .critiques-item, .our-expert-person-wrapper, .our-expert-team, .causes-form-block, .cf-causes-item, .assets-flexbox, .closing-section, .closing-section-navcol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.startview-bgimg {
+  background-image: url(bg/0_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.startview-bgcolor {
+  background-color: #000957b0;
+}
+
+.startview-block {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.startview-site {
+    flex-direction: row-reverse;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    justify-content: space-between;
+    gap: 19px;
+}
+
+.startview-cont {
+  flex-direction: row-reverse;
+  gap: 11px;
+}
+
+.startview-contimg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e3e3;
+}
+
+.startview-contimg svg {
+  width: 28px;
+  height: 28px;
+  fill: #000957;
+}
+
+.startview-cont a {
+  white-space: break-spaces;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.startview-logo, .cs-namecol-logo {
+  gap: 11px;
+}
+
+.startview-logo img, .cs-namecol-logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.startview-logo h3, .cs-namecol-logo h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.startview-navigtn {
+  background-color: #ffffff;
+}
+
+.startview-navigtn a {
+  padding: 9px 11px;
+  background-color: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: inherit;
+  line-height: normal;
+  position: relative;
+  transition: all 500ms ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.startview-navigtn a::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #009A44;
+ transform: translateY(-100%);
+ transition: all 500ms ease;
+ z-index: -1;
+}
+
+.startview-navigtn a:hover {
+  color: #ffffff;
+}
+
+.startview-navigtn a:hover::before {
+ transform: translateY(0);
+}
+
+.first-meeting-banner-bgcolor {
+  direction: ltr;
+  background-color: #040807;
+}
+
+.first-meeting-banner-bgopas {
+  background: url(bg/0_opacity.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first-meeting-banner {
+  gap: 41px;
+}
+
+.fmeetb-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fmeetb-decor {
+  width: 47%;
+  height: 550px;
+  position: relative;
+}
+
+.fmeetb-decor-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 470px;
+    background-color: #009A44;
+    border-radius: 1000px 1000px 0px 0px;
+}
+
+.fmeetb-decor-bg::after {
+    background-image: url(bg/1_opacity.png);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    border-radius: 1000px 1000px 0px 0px;
+}
+
+.fmeetb-title {
+  font-size: 26px;
+  margin-bottom: 27px;
+}
+
+.fmeetb-btn {
+  display: flex;
+  margin: auto;
+}
+
+.fmeetb-decor-hero {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 500px;
+}
+
+.fmeetb-decor-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fmeetb-decor-circle {
+    position: relative;
+    margin-left: auto;
+    background-color: #009A44;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    top: 27px;
+}
+
+.fd-circle-txt {
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    left: 12%;
+    display: block;
+    overflow: visible;
+    width: 130px;
+    font-size: 7px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+    fill: #ffffff;
+    animation: circletxt 10s linear infinite;
+}
+
+@keyframes circletxt {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.fd-circle-txt path {
+  fill: none;
+}
+
+svg.fd-circle-dot {
+    fill: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+}
+
+.fmeetb-decor-pic {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  width: 100px;
+  height: 130px;
+  object-fit: contain;
+  animation: zump 2s linear infinite;
+}
+
+@keyframes zump {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+.dark-body {
+  background-color: #040807;
+}
+
+.about-experience  {
+  flex-direction: row-reverse;
+  gap:  41px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.ab-ex-decor {
+  position: relative;
+  width: 47%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ab-ex-decor-bigimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ab-ex-decor-lilimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 35%;
+    object-fit: cover;
+    border-bottom: 8px solid #000;
+    border-left: 8px solid #000;
+}
+
+.ad-ex-decor-stat {
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  min-height: 35%;
+  border-top: 8px solid #000;
+  border-right: 8px solid #000;
+  display: flex;
+  align-items: center;
+  background-color: #009A44;
+}
+
+.adexd-stat-item {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding:  5px;
+    background-color: #000957;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+}
+
+.adexd-stat-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    font-size: 26px;
+    color:  #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.9px;
+    text-transform: uppercase;
+}
+
+
+.ab-ex-content {
+  width: 48%;
+  display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.ab-ex-title {
+  margin-bottom: 41px;
+}
+
+.ab-ex-txt {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 41px;
+}
+
+.ab-ex-statlist {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 19px;
+  padding: 0 19px;
+}
+
+.ab-ex-statitem {
+  flex-direction: row-reverse;
+  gap: 11px;
+  justify-content: start;
+  width: 40%;
+}
+
+
+.ab-ex-statitem-pic, .causes-count {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    transition: all 500ms ease;
+}
+
+.ab-ex-statitem:hover .ab-ex-statitem-pic::after, .cf-causes-item:hover .causes-count::after  {
+    bottom: -50%;
+}
+
+.ab-ex-statitem-pic::after, .causes-count::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 150%;
+    background-color: #000957;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    border-radius: 50%;
+}
+
+.ab-ex-statitem-pic svg, .causes-count svg {
+  width: 28px;
+  height: 28px;
+  fill: #000957;
+}
+
+.ab-ex-statitem:hover .ab-ex-statitem-pic svg, .cf-causes-item:hover .causes-count svg {
+  fill: #ffffff;
+}
+
+.ab-ex-statitem-data {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.critiques-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.critiques-title {
+  margin-bottom: 41px;
+}
+
+.critiques-list {
+  flex-direction: row-reverse;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.critiques-item {
+  width: 48%;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+}
+
+.critiques-comment {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 19px;
+  width: -webkit-fill-available;
+  border: 1px solid #ffffff4d;
+  border-bottom: none;
+  background-color: #000957;
+  padding: 27px 27px 22px;
+}
+
+.critiques-quote {
+  display: flex;
+  justify-content: end;
+}
+
+.critiques-quote svg {
+    width: 58px;
+    height: 43px;
+    fill: #040807;
+    transition: all 500ms ease;
+}
+
+.critiques-item:hover .critiques-quote svg {
+  fill: #009A44;
+}
+
+.critiques-comment p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: #ffffff;
+} 
+
+.critiques-autor-bg {
+    background-color: #009A44;
+    width: -webkit-fill-available;
+}
+
+.critiques-autor-op {
+    background-image: url(bg/2_opacity.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: -webkit-fill-available;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    z-index: 1;
+    padding: 19px;
+    overflow: hidden;
+}
+
+.critiques-autor-pic {
+    width: 45px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.critiques-autor-pic::after {
+    content: "";
+    width: calc(100% + 8px);
+    height: 150px;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border-radius: 1000px 1000px 0px 0px;
+    transition: all 400ms ease;
+    z-index: -1;
+}
+
+.critiques-autor-pic img {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.critiques-item:hover .critiques-autor-pic::after {
+    height: calc(100% + 8px);
+    border-radius: 1000px;
+}
+
+.critiques-autor-name p {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: inherit;
+    margin-bottom: -5px;
+}
+
+.our-expert-bgimg {
+  background-image: url(bg/1_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-expert-bgop {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #000957cc;
+}
+
+.our-expert-title {
+  margin-bottom;: 41px;
+}
+
+.our-expert-team {
+  flex-direction: row-reverse;
+  gap: 27px;
+}
+.our-expert-person {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    padding: 27px 27px 22px;
+    background-color: transparent;
+    border: 1px solid #ffffff4d;
+    transition: all 400ms ease;
+}
+
+.our-expert-person:hover {
+    border-color: transparent;
+}
+
+.our-expert-person-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, #009A44 0%, rgba(168, 31, 35, 0) 100%);
+    transition: all 500ms ease;
+}
+
+.our-expert-person:hover .our-expert-person-bg {
+    top: 0;
+    height: 100%;
+}
+
+.our-expert-person-wrapper {
+  position: relative;
+  z-index: 2;
+  flex-direction: column-reverse;
+}
+
+.our-expert-person-img {
+  width: 100%;
+  height: 242px;
+}
+
+.our-expert-person-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-expert-person-name {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.our-expert-person-name h5 {
+  font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    text-transform: inherit;
+    margin: 10px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.our-expert-person-name span {
+    margin: 9px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-transform: inherit;
+}
+
+.causes-form-bg {
+  background-image: url(bg/2_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 41px 0;
+}
+
+.causes-form-block {
+  flex-direction: row-reverse;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  gap: 41px;
+  backdrop-filter: contrast(20%);
+  border-radius: 3px;
+}
+
+.cf-causes {
+  width: 47%;
+}
+
+
+.cf-form {
+  position: relative;
+  width: 47%;
+}
+
+.cf-form-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  position: relative;
+  backface-visibility: hidden;
+  padding: 24px;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.cf-form-title {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 9px;
+  color: #ffffff;
+}
+
+.input-q7906526, .textarea-q7906526 {
+  width: 100%;
+  min-height: 45px;
+  color: #ffffff;
+  outline: none;
+  transition: 0.35s;
+  padding: 0px 7px;
+  background-color: #212121;
+  border-radius: 3px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+
+.input-q7906526::placeholder, .textarea-q7906526::placeholder {
+  color: #ffffff;
+}
+
+.input-q7906526:focus.input-q7906526::placeholder, .textarea-q7906526:focus.textarea-q7906526::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.input-q7906526:focus, .textarea-q7906526:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.cf-form-body label {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.cf-form-checker {
+  margin: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.cf-form-checker input {
+  width: 20px;
+  height: 20px;
+}
+
+.cf-form-checker label {
+  margin: 0;
+}
+
+.cf-causes-item {
+  gap: 11px;
+}
+
+.cf-causes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+ }
+
+.cf-causes-item p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: inherit;
+    margin-bottom: 9px;
+    color: #ffffff;
+}
+
+.main-chapter {
+  padding: 85px;
+  margin-top: 41px;
+  margin-bottom: 41px;
+  position: relative;
+  border: 1px solid #ffffff4d;
+}
+
+.main-chapter-img {
+    width: 50%;
+    height: auto;
+    max-height: 575px;
+    object-fit: contain;
+    margin: 19px;
+    float: left;
+}
+
+.main-chapter-price {
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  right: 73px;
+  display: flex;
+}
+
+.mc-price-txt {
+    width: 40%;
+    padding: 11px;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: inherit;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    background-color: #000957;
+}
+
+.mc-price-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.9px;
+    text-transform: inherit;
+    background-color: #009A44;
+}
+
+.main-chapter-txt {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.assets-bgvideo {
+  width: 100%;
+  height: 455px;
+}
+
+.assets-bgvideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.assets-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.assets-bgcolor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 41px;
+  margin-bottom: 41px;
+  background-color: #040807e0;
+}
+
+.assets-flexbox {
+  gap: 22px;
+}
+
+.assets-card {
+  position: relative;
+  padding-top: 210px;
+  flex: 0 0 auto;
+  width: 24%;
+}
+
+.assets-card-first {
+  flex-direction: row-reverse;
+  position: relative;
+  background-color: #009A44;
+  display: flex;
+  justify-content: space-between;
+}
+
+.assets-card-first-img {
+  padding: 11px 22px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.assets-card-first-img img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.assets-card-first-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 39px;
+}
+
+.assets-card-second {
+    position: relative;
+    background-color: #009A44;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.assets-card:hover .assets-card-second {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.assets-card-inner {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 27px 19px 22px;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.closing-section-bg {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #009A44cc;
+}
+
+.closing-section-wrapper {
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.closing-section {
+  direction: ltr;
+  padding: 19px 0;
+  gap: 41px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.closing-section-namecol {
+  width: 35%;
+  flex-direction: column-reverse;
+  gap: 22px;
+  border-right: 2px solid #ffffff;
+  padding: 0 11px;
+}
+
+.closing-section-navigation, .closing-section-cont {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  width: 48%;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.closing-section-navigation h5, .closing-section-cont h5 {
+  margin: 0;
+  margin-bottom: 19px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.closing-section-navigation a, .closing-section-cont a {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.closing-section-navcol {
+  width: 63%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.rnd-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.button-1 {
+  padding: 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: rgb(17, 17, 17);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.button-1:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #ffffffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowsubbtn 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button-1:active {
+  color: #000
+}
+
+.button-1:active:after {
+  background: transparent;
+}
+
+.button-1:hover:before {
+  opacity: 1;
+}
+
+.button-1:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowsubbtn {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+.button-2 {
+  --bg: #6a6060;
+  --hover-bg: #009A44;
+  --hover-text: #000;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button-2:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button-2:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.button-3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #000957;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #000957;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button-3:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #000957;
+  z-index: -1;
+}
+
+.button-3:hover, .button-3:focus {
+  color: white;
+}
+
+.button-3:hover:before, .button-3:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button-3:active {
+  transform: scale(0.9);
+}
+
+.button-4 {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000957;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #000957;
+}
+
+.button-4:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button-4::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000957;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-4:hover::before {
+  width: 250%;
+}
+
+.button-5 {
+ padding: 0.6em 1em;
+ border: 4px solid #000957;
+ transition: ease-in-out 0.3s;
+ background-color: transparent;
+ color: #fff;
+ font-weight: bolder;
+ font-size: 16px;
+}
+
+.button-5:hover {
+  color: white;
+ transform: scale(1.2) rotate(-5deg);
+ background-color: #000957;
+}
+
+
+@media (max-width: 1200px) {
+
+  .central-block {
+  max-width: 1140px;
+}
+
+}
+
+@media (max-width: 992px) {
+
+  .central-block {
+  max-width: 960px;
+}
+
+.startview-site {
+  flex-wrap: wrap;
+}
+
+.startview-logo h3, .cs-namecol-logo h3 {
+  margin: 0;
+}
+
+.startview-cont a {
+  font-size: 14px;
+}
+
+.startview-logo h3, .cs-namecol-logo h3 {
+  font-size: 22px;
+}
+
+
+.fmeetb-title {
+  font-size: 22px;
+}
+
+.fmeetb-decor-hero {
+  height: 300px;
+}
+
+.fmeetb-decor-bg {
+  height: 350px;
+}
+
+.fmeetb-decor {
+  height: 370px;
+}
+
+.fmeetb-decor-circle {
+  display: none;
+}
+
+.ab-ex-statitem-data {
+  font-size: 12px;
+}
+
+.adexd-stat-amount {
+  font-size: 18px;
+}
+
+.adexd-stat-item {
+  font-size: 10px;
+}
+
+.title, .fmeetb-title, .ab-ex-title, .critiques-title, .our-expert-title, .cf-causes-title, .main-chapter-title, .assets-title {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.assets-card-inner {
+  font-size: 0.7em;
+}
+
+.mc-price-data {
+  font-size: 20px;
+}
+
+.main-chapter {
+  padding: 60px 30px;
+}
+
+.mc-price-txt {
+  font-size: 10px;
+}
+
+.cf-form-title {
+  margin: 0;
+  font-size: 14px;
+}
+
+.critiques-autor-name p {
+  font-size: 16px;
+}
+
+.critiques-autor-op {
+  padding: 10px;
+}
+
+.critiques-comment {
+  padding: 15px;
+}
+
+.about-experience, .critiques-section, .our-expert-bgop {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.our-expert-person-name h5 {
+  font-size: 14px;
+}
+
+.our-expert-person-name span {
+  font-size: 12px;
+}
+
+.our-expert-person-img {
+  height: 150px;
+}
+
+.critiques-quote svg {
+  width: 30px;
+  height: 30px;
+}
+
+.closing-section{
+  gap: 20px;
+}
+
+.closing-section-navigation, .closing-section-cont {
+  font-size: 12px;
+}
+
+.fmeetb-title {
+  font-size: 18px;
+}
+
+
+}
+
+@media(max-width: 767px)  {
+
+  .central-block {
+    max-width: 720px;
+  }
+
+  .startview-contimg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .startview-contimg svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .startview-navigtn a {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+
+  .assets-flexbox {
+    flex-wrap: wrap;
+  }
+
+  .assets-card {
+    padding-top: 0;
+    width: 44%;
+  }
+
+  .assets-card-first {
+    display: none;
+  }
+
+  .assets-card-second {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px);
+  }
+
+  .assets-card-inner {
+    padding: 15px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .assets-card-first-img img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-experience {
+    flex-direction: column;
+  }
+
+  .ab-ex-content {
+    width: 100%;
+  }
+
+  .ab-ex-decor {
+    width: 100%;
+  }
+
+  .main-chapter-txt {
+    font-size: 14px;
+  }
+
+  .main-chapter-img {
+    max-height: 300px;
+  }
+
+  .our-expert-team {
+    flex-direction: column;
+  }
+
+  .our-expert-person {
+    width: 100%;
+  }
+
+  .our-expert-person-wrapper {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .our-expert-person-img {
+    width: 30%;
+  }
+
+  .causes-form-block {
+    flex-direction: column;
+  }
+
+  .cf-causes, .cf-form {
+    width: 100%;
+  }
+
+  .closing-section-navcol {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .closing-section-navigation, .closing-section-cont {
+    width: 100%;
+  }
+
+  .closing-section-navigation h5, .closing-section-cont h5 {
+    margin: 0;
+  }
+
+
+}
+
+@media(max-width: 576px) {
+
+  .central-block {
+    max-width: 540px;
+  }
+
+  .startview-navigtn {
+    flex-wrap: wrap;
+  }
+
+  .first-meeting-banner {
+    flex-direction: column-reverse;
+  }
+
+  .fmeetb-decor, .fmeetb-text, .fmeetb-decor, .ab-ex-statitem, .assets-card, .closing-section-namecol, .closing-section-navcol {
+    width: 100%;
+  }
+
+  .main-chapter-img {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .our-expert-person-wrapper {
+    flex-direction: column;
+  }
+
+  .our-expert-person-img {
+    width: 100%;
+  }
+
+  .ab-ex-statitem {
+    justify-content: space-between;
+  }
+
+  .closing-section {
+    flex-direction: column;
+  }
+
+  .assets-bgvideo {
+    height: 630px;
+  }
+
+  .assets-card-inner {
+    gap: 10px;
+  }
+
+  .assets-card-first-img {
+    padding: 0;
+  }
+
+  .ad-ex-decor-stat {
+    flex-direction: column;
+  }
+
+  .adexd-stat-item {
+    width: 100%;
+    writing-mode: initial;
+    transform: rotate(0deg);
+    font-size: 12px;
+  }
+
+  .adexd-stat-amount {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    display: flex;
+    margin: auto;
+  }
+
+  .closing-section-namecol {
+    border-right: none;
+  }
+
+  .startview-cont a {
+    font-size: 12px;
+  }
+
+  .assets-card-first-img {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+    </style>
+
+    
+</head>
+
+
+<body>
+
+    <header>
+      <div class="startview-bgimg">
+        <div class="startview-bgcolor">
+          <div class="central-block startview-block">
+            <div class="startview-site">
+              <div class="startview-cont">
+                <div class="startview-contimg">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                </div>
+                <a href="tel:+380 48 747 3200">+380 48 747 3200</a>
+              </div>
+              <a class="startview-logo" href="./">
+                <img src="logotip.svg"  alt="">
+                <h3>Business Mix</h3>
+              </a>
+              <div class="startview-cont">
+                <div class="startview-contimg">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </div>
+                <a href="mailto:client-support_companyname@mail.com">client-support_companyname@mail.com</a>
+              </div>
+            </div>
+            <div class="startview-navigtn Ywypwx">
+              <a class="stvw-nvlink" href="./">Дім</a>
+              <a class="stvw-nvlink" href="./#about">
+                Про нас
+              </a>
+              <a class="stvw-nvlink" href="./#assets">
+                Наші переваги
+              </a>
+              <a class="stvw-nvlink" href="./#team">
+                Наші люди
+              </a>
+              <a class="stvw-nvlink" href="./#comment">
+                  Коментарі
+              </a>
+              <a class="stvw-nvlink" href="./#adres">
+                Контакти
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="first-meeting-banner-bgcolor">
+        <div class="first-meeting-banner-bgopas">
+          <div class="central-block first-meeting-banner">
+            <div class="fmeetb-text">
+              <h2 class="fmeetb-title"> Ласкаво просимо до CompanyName! Ваша довіра та підтримка – основа нашого успіху та натхнення.</h2>
+              
+            </div>
+            <div class="fmeetb-decor">
+              <div class="fmeetb-decor-bg"></div>
+              <div class="fmeetb-decor-hero">
+                <img src="bg/0_vectimg.svg" alt="">
+              </div>
+              <div class="fmeetb-decor-circle">
+                <svg class="fd-circle-txt" viewBox="0 0 100 100">
+                  <path id="circle" d="M 0,50 a 50,50 0 1,1 0,1 z" />
+                  <text>
+                    <textPath xlink:href="#circle">
+                      Спроектований і побудований з усією любов'ю світу! &nbsp; &bull; &nbsp;
+                    </textPath>
+                  </text>
+                </svg>
+                <svg class="fd-circle-dot" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-280q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+              </div>
+              <img class="fmeetb-decor-pic" src="bg/1_vectimg.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </header>
+    
+<style>
+    
+    
+
+</style>
+
+<section style="padding: 109px 0px; background-color: #060606;">
+    <div class="central-block" >        
+        <div style="overflow: hidden;">
+            <h2 class="pol-title">Умови надання послуг</h2>
+        <div style="color:  #f8f5f1;">
+            <p>Ці правила та умови визначають правила та положення використання Веб-сайту, розташовані за адресою <span class="domaintextname-n0ONdgkR"></span>.</p>
+
+<p>Отримуючи доступ до цього веб-сайту, ми припускаємо, що ви приймаєте ці умови. Не продовжуйте використовувати <span class="domaintextname-n0ONdgkR"></span> , якщо ви не згодні прийняти всі умови та положення, зазначені на цій сторінці.</p>
+
+<h3>Печиво:</h3>Веб-сайт використовує файли cookie, щоб персоналізувати ваш досвід роботи в Інтернеті. Отримавши <span class="domaintextname-n0ONdgkR"></span>доступ, ви погодилися використовувати необхідні файли cookie.<p>
+
+<p>Файл cookie – це текстовий файл, який розміщується на жорсткому диску сервером веб-сторінки. Файли cookie не можуть використовуватися для запуску програм або доставки вірусів на ваш комп'ютер. Файли cookie призначаються виключно вам, і їх може зчитувати лише веб-сервер у домені, який видав вам файл cookie.</p>
+
+<p>Ми можемо використовувати файли cookie для збору, зберігання та відстеження інформації для статистичних або маркетингових цілей для роботи нашого веб-сайту. Ви можете прийняти або відхилити додаткові файли cookie. Існують деякі необхідні файли cookie, необхідні для роботи нашого веб-сайту. Ці файли cookie не вимагають вашої згоди, оскільки вони завжди працюють. Будь ласка, майте на увазі, що, приймаючи необхідні файли cookie, ви також приймаєте сторонні файли cookie, які можуть використовуватися через послуги, що надаються третіми сторонами, якщо ви використовуєте такі послуги на нашому веб-сайті, наприклад, вікно відображення відео, надане третіми сторонами та інтегроване в наш веб-сайт.</p>
+
+<h3>Ліцензія:</h3>
+<p>Якщо не вказано інше, <span class="domaintextname-n0ONdgkR"></span> та/або його ліцензіари володіють правами інтелектуальної власності на весь матеріал на <span class="domaintextname-n0ONdgkR"></span>. Всі права інтелектуальної власності захищені. Ви можете отримати доступ до цього для <span class="domaintextname-n0ONdgkR"></span> особистого використання з урахуванням обмежень, встановлених цими умовами.</p>
+
+<p>Ви не повинні:</p>
+<ul>
+    <li>Копіювання або повторна публікація матеріалу з <span class="domaintextname-n0ONdgkR"></span></li>
+    <li>Продавати, здавати в оренду або субліцензувати матеріали від <span class="domaintextname-n0ONdgkR"></span></li>
+    <li>Відтворювати, дублювати або копіювати матеріал з <span class="domaintextname-n0ONdgkR"></span></li>
+    <li>Розповсюджувати вміст із <span class="domaintextname-n0ONdgkR"></span></li>
+</ul>
+
+<p>Ця Угода починає діяти з дати її укладення.</p>
+
+<p>Частини цього веб-сайту надають користувачам можливість розміщувати та обмінюватися думками та інформацією в певних областях веб-сайту. <span class="domaintextname-n0ONdgkR"></span> не фільтрує, не редагує, не публікує та не переглядає коментарі до їх присутності на веб-сайті. Коментарі не відображають погляди та думки <span class="domaintextname-n0ONdgkR"></span>його агентів та/або афілійованих осіб. Коментарі відображають погляди та думки особи, яка публікує свої погляди та думки. У межах, дозволених чинним законодавством, не несе відповідальності за Коментарі або будь-яку відповідальність, збитки або витрати, <span class="domaintextname-n0ONdgkR"></span> спричинені та / або понесені в результаті будь-якого використання та / або розміщення та / або появи Коментарів на цьому веб-сайті.</p>
+
+<p><span class="domaintextname-n0ONdgkR"></span> залишає за собою право відстежувати всі Коментарі та видаляти будь-які Коментарі, які можуть вважатися недоречними, образливими або спричиняють порушення цих Правил та умов.</p>
+
+<p>Ви гарантуєте та заявляєте, що:</p>
+<ul>
+    <li>Ви маєте право розміщувати Коментарі на нашому веб-сайті та маєте всі необхідні ліцензії та згоди на це;</li>
+    <li>Коментарі не порушують жодних прав інтелектуальної власності, включаючи, але не обмежуючись, авторське право, патент або товарний знак будь-якої третьої сторони;</li>
+    <li>Коментарі не містять жодних наклепницьких, наклепницьких, образливих, непристойних або інших незаконних матеріалів, які є вторгненням у приватне життя;</li>
+    <li>Коментарі не будуть використовуватися для заохочення або просування бізнесу, замовлення або представлення комерційної діяльності або незаконної діяльності.</li>
+</ul>
+
+<p>Цим ви надаєте <span class="domaintextname-n0ONdgkR"></span> невиключну ліцензію на використання, відтворення, редагування та дозвіл іншим використовувати, відтворювати та редагувати будь-які ваші Коментарі в будь-яких формах, форматах або засобах масової інформації.</p>
+
+<h3>Гіперпосилання на наш контент:</h3>
+<p>Наступні організації можуть посилатися на наш веб-сайт без попередньої письмової згоди:</p>
+<ul>
+    <li>Державні установи;</li>
+    <li>Пошукових;</li>
+    <li>Новинні організації;</li>
+    <li>Дистриб'ютори онлайн-каталогів можуть посилатися на наш Веб-сайт таким же чином, як вони гіперпосилаються на веб-сайти інших перерахованих компаній; і</li>
+    <li>Загальносистемні акредитовані підприємства, за винятком некомерційних організацій, благодійних торгових центрів та благодійних груп зі збору коштів, які не можуть посилатися на наш веб-сайт.</li>
+</ul>
+
+<p>Ці організації можуть посилатися на нашу домашню сторінку, публікації або іншу інформацію веб-сайту, якщо посилання: (a) жодним чином не вводить в оману; (b) не має на увазі помилкове спонсорство, схвалення або схвалення сторони, що зв'язує, та її продуктів та/або послуг; та (c) вписується в контекст веб-сайту сторони, що посилається.</p>
+
+<p>Ми можемо розглядати та схвалювати інші запити на посилання від таких типів організацій:</p>
+<ul>
+    <li>загальновідомі джерела інформації для споживачів та/або бізнесу;</li>
+    <li>dot.com сайти спільноти;</li>
+    <li>асоціації або інші групи, що представляють благодійні організації;</li>
+    <li>онлайн-каталог дистриб'юторів;</li>
+    <li>інтернет-портали;</li>
+    <li>бухгалтерські, юридичні та консалтингові фірми; і</li>
+    <li>навчальні заклади та торгові асоціації.</li>
+</ul>
+
+<p>Ми схвалимо запити на посилання від цих організацій, якщо вирішимо, що: (a) посилання не змусить нас виглядати несприятливо для себе або наших акредитованих підприємств; (b) організація не має жодних негативних записів щодо нас; (c) вигода для нас від видимості гіперпосилання компенсує відсутність <span class="domaintextname-n0ONdgkR"></span>; і (d) посилання знаходиться в контексті загальної інформації про ресурс.</p>
+
+<p>Ці організації можуть посилатися на нашу домашню сторінку, якщо посилання: (a) жодним чином не вводить в оману; (b) не має на увазі помилкове спонсорство, схвалення або схвалення сторони, що зв'язує, та її продуктів або послуг; та (c) вписується в контекст веб-сайту сторони, що посилається.</p>
+
+<p>Якщо ви є однією з організацій, перелічених у пункті 2 вище, і зацікавлені в посиланні на наш веб-сайт, ви повинні повідомити нас, надіславши електронний лист на адресу client-support_companyname@mail.com. Будь ласка, вкажіть своє ім'я, назву вашої організації, контактну інформацію, а також URL-адресу вашого сайту, список будь-яких URL-адрес, з яких ви маєте намір посилатися на наш веб-сайт, і список URL-адрес на нашому сайті, на які ви хотіли б посилатися. Зачекайте відповіді 2-3 тижні.</p>
+
+<p>Затверджені організації можуть гіперпосилатися на наш Веб-сайт наступним чином:</p>
+<ul>
+    <li>Використовуючи нашу фірмову назву; або</li>
+    <li>За допомогою уніфікованого покажчика ресурсів, з яким пов'язано; або</li>
+    <li>Використання будь-якого іншого опису посилання на наш веб-сайт має сенс у контексті та форматі вмісту на сайті сторони, що посилається.</li>
+    <li>Забороняється використання нашого логотипу або іншої ілюстрації для посилань за відсутності ліцензійної угоди на торговельну марку.</li>
+</ul>
+
+<h3>Відповідальність за вміст:</h3>Ми не несемо відповідальності за будь-який контент, який з'являється на вашому веб-сайті. Ви погоджуєтеся захищати нас від усіх претензій, які висуваються на вашому Веб-сайті. На будь-якому Веб-сайті не повинно з'являтися жодне посилання, яке може бути витлумачено як наклепницьке, непристойне або злочинне, або яке порушує, іншим чином порушує або пропагує порушення або інше порушення будь-яких прав третіх осіб.</p>
+
+<h3>Збереження прав:</h3>Ми залишаємо за собою право вимагати, щоб ви видалили всі посилання або будь-яке конкретне посилання на наш веб-сайт. Ви погоджуєтеся негайно видалити всі посилання на наш Веб-сайт за запитом. Ми також залишаємо за собою право в будь-який час змінювати ці умови та політику зв'язування. Постійно посилаючись на наш веб-сайт, ви погоджуєтесь бути зобов'язаними та дотримуватися цих правил та умов посилань.<p>
+
+<h3>Видалення посилань з нашого веб-сайту:</h3>Якщо ви знайдете будь-яке посилання на нашому веб-сайті, яке є образливим з будь-якої причини, ви можете зв'язатися з нами та повідомити нас у будь-який момент. Ми розглянемо запити на видалення посилань, але ми не зобов'язані відповідати вам безпосередньо.</p>
+
+<p>Ми не гарантуємо, що інформація на цьому веб-сайті є правильною. Ми не гарантуємо його повноту або точність, а також не обіцяємо гарантувати, що веб-сайт залишається доступним або що матеріали на веб-сайті оновлюються.</p>
+
+<h3>Застереження:</h3>
+<p>У максимальному ступені, дозволеному чинним законодавством, ми виключаємо всі заяви, гарантії та умови, що стосуються нашого веб-сайту та використання цього веб-сайту. Ніщо в цьому застереженні не буде:</p>
+<ul>
+    <li>обмежити або виключити нашу або вашу відповідальність за смерть або тілесні ушкодження;</li>
+    <li>обмежити або виключити нашу або вашу відповідальність за шахрайство або навмисне введення в оману;</li>
+    <li>обмежити будь-які наші або ваші зобов'язання будь-яким способом, який не дозволений чинним законодавством; або</li>
+    <li>виключити будь-які наші або ваші зобов'язання, які не можуть бути виключені відповідно до чинного законодавства.</li>
+</ul>
+
+<p>Обмеження та заборони відповідальності, встановлені в цьому розділі та в інших місцях цієї відмови від відповідальності: (a) регулюються попереднім пунктом; та (b) регулюють усі зобов'язання, що виникають у зв'язку з відмовою від відповідальності, включаючи зобов'язання, що виникають за контрактом, деліктом та за порушення встановлених законом обов'язків.</p>
+
+<p>Поки веб-сайт, інформація та послуги на веб-сайті надаються безкоштовно, ми не несемо відповідальності за будь-які втрати або шкоду будь-якого характеру.</p>
+
+<p>Більше інформації можна знайти в <a href="disclaimer.html">застереженні</a></p>
+
+<script>for(var domainElements=document.getElementsByClassName("domaintextname-n0ONdgkR"),hostname=window.location.hostname,i=0;i<domainElements.length;i++)domainElements[i].innerHTML=hostname</script>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer id="adres" class="closing-section-bg">
+      <div class="ftr-bottom-map">
+        <iframe src="https://maps.google.com/maps?hl=en&q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D0%BA%D0%B0%20%D0%93%D0%BB%D1%83%D1%88%D0%BA%D0%BE%D0%B2%D0%B0%2C%2013%D0%91%2C%20%D0%9A%D0%B8%D1%97%D0%B2%2C%20%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0%2C%2002000&ie=UTF8&t=&z=8&iwloc=B&output=embed" width="100%" height="182" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="central-block closing-section-wrapper">
+        <div class="closing-section">
+          <div class="closing-section-namecol">
+            <a class="cs-namecol-logo" href="./">
+              <img src="logotip.svg"  alt="">
+              <h3>Business Mix</h3>
+            </a>
+            <a  href="https://wa.me/+380487473200"> <button class="button-2"><i class="bi bi-whatsapp"></i>  &nbsp whatsapp</button> </a>
+          </div>
+          <div class="closing-section-navcol">
+            <div class="closing-section-navigation">
+              <h5>Навігації</h5>
+              <a class="" href="./">Дім</a>
+              <a href="privacy.html">Політика конфіденційності</a>
+              <a href="term.html">Правила та умови</a>
+              <a href="disclaimer.html">Застереження</a>
+            </div>
+            <div class="closing-section-cont">
+              <h5>Контакти</h5>
+              <p>ТОВ «ЛИВАЙН ТОРГ», Код ЕГРПОУ 41449359</p>
+              <p>проспект Академіка Глушкова, 13Б, Київ, Україна, 02000</p>
+              <a href="tel:+380 48 747 3200" style="color: #ffffff;"> +380 48 747 3200</a>
+              <a href="mailto:client-support_companyname@mail.com" style="color: #ffffff;">client-support_companyname@mail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+   
+    <style>
+    .x981m3 {
+      width: calc(100% - 60px);
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: left;
+      position: fixed;
+      bottom: 25px;
+      left: calc(50% - 15px);
+      transform: translateX(-50%);
+      max-width: 355px;
+      border-radius: 12px;
+      z-index: 3;
+      gap: 10px;
+      margin: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+  
+    .x981m3-message {
+      font-size: 14px;
+      display: inline-block;
+      word-wrap: break-word;
+      max-width: 100%;
+      color: rgb(69 81 90);
+      font-weight: 400;
+      opacity: .8;
+      padding: 25px;
+      text-align: center;
+    }
+  
+    .x981m3-message h1 {
+      font-size: 28px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-bottom: 10px;
+      color: #000;
+    }
+  
+    .cfl193 {
+      border: none;
+      cursor: pointer;
+      padding: 15px 15px;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
+      color: #fff;
+      white-space: nowrap;
+      font-weight: 500;
+      text-transform: uppercase;
+      border: 2px solid transparent;
+    }
+  
+    .xmnal3910msjd341-customize-btn {
+      background: transparent;
+      color: #000;
+    }
+  
+    .xmnal3910msjd341-agree-btn {
+      color: white;
+      background: #000957;
+    }
+  
+    .x981m3 > div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-top: 1px solid #ccc;
+    }
+  
+    .x981m3 > div > button {
+      flex: 1 1 50%;
+    }
+  
+    @media screen and (max-width: 420px) and (min-width: 320px) {
+        .x981m3-message {
+        font-size: 13px;
+      }
+      .x981m3-message{
+        padding: 10px;
+      }
+      .cfl193 {
+        padding: 15px 10px;
+      }
+      .x981m3-message h1{
+        font-size: 18px;
+      }
+    }
+  
+    .xmnal3910msjd341-options-panel {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      position: fixed;
+      bottom: 25px;
+      left: calc(50% - 15px);
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      z-index: 4;
+      border-radius: 10px;
+      max-width: 300px;
+      width: calc(100% - 60px);
+      margin: 0 15px;
+    }
+  
+    .xmnal3910msjd341-options-panel .center-text {
+      font-size: 19px;
+      font-weight: 600;
+    }
+  
+    .xmnal3910msjd341-options-panel label {
+      margin: 10px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 12px;
+    }
+  
+    .xmnal3910msjd341-options-panel label svg {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .xmnal3910msjd341-options-panel label > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"] {
+      display: none;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"] + .toggle {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      cursor: pointer;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"] + .toggle:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #ccc;
+      left: 2px;
+      transition: all 0.3s ease;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"]:checked + .toggle {
+      background-color: #009A44;
+    }
+  
+    .xmnal3910msjd341-options-panel label input[type="checkbox"]:checked + .toggle:before {
+      background-color: #009A44;
+    }
+  
+    .xmnal3910msjd341-submit-btn {
+      background: #000957;
+      color: #fff;
+    }
+  
+    .hidden {
+      display: none !important;
+    }
+  
+    .center-text {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 25px !important;
+    }
+  
+    .align-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .align-center button {
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+  </style>
+  
+  <div class="x981m3 hidden">
+    <span class="x981m3-message">
+      <h1>	Файл cookie!</h1>
+  
+      Ми використовуємо файли cookie, щоб покращити ваш досвід перегляду, проаналізувати відвідуваність сайту та надати персоналізовану рекламу. Продовжуючи переглядати або закриваючи цей банер, ви погоджуєтеся на використання файлів cookie. Дізнайтеся більше про те, як ми використовуємо файли cookie та як ви можете ними керувати, натиснувши «Налаштування».
+    </span>
+  
+    <div>
+      <button class="xmnal3910msjd341-customize-btn cfl193">Settings</button>
+      <button class="xmnal3910msjd341-agree-btn cfl193">
+  
+        Прийняти файли cookie</button>
+    </div>
+  </div>
+  <div class="xmnal3910msjd341-options-panel hidden">
+    <div class="center-text">	Налаштування файлів cookie</div>
+  
+    <label>
+      <div>
+        <input type="checkbox" checked class="xmnal3910msjd341-consent-checkbox" name="analytics">
+        Аналітика
+  
+        <span class="toggle"></span>
+      </div>
+  
+    </label>
+    <label>
+      <div>
+        <input type="checkbox" checked class="xmnal3910msjd341-consent-checkbox" name="preferences">
+        Налаштування
+  
+        <span class="toggle"></span>
+      </div>
+  
+    </label>
+    <label>
+      <div>
+        <input type="checkbox" checked class="xmnal3910msjd341-consent-checkbox" name="marketing">
+        Маркетингу
+  
+        <span class="toggle"></span>
+      </div>
+  
+    </label>
+  
+    <div class="align-center">
+      <button class="xmnal3910msjd341-submit-btn cfl193">Save</button>
+    </div>
+  </div>
+  
+  <script>
+    function encodeCookieData(name, data, expireDays) {
+      let expires = "";
+      if (expireDays) {
+        const date = new Date();
+        date.setTime(date.getTime() + (expireDays * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (data || "") + expires + "; path=/";
+    }
+  
+    function decodeCookieData(name) {
+      const cookieString = `${name}=`;
+      const cookiesArray = document.cookie.split(';').map(cookie => cookie.trim());
+      const foundCookie = cookiesArray.find(cookie => cookie.startsWith(cookieString));
+      return foundCookie ? decodeURIComponent(foundCookie.split('=')[1]) : '';
+    }
+  
+    function toggleElementVisibility(elementSelector) {
+      const element = document.querySelector(elementSelector);
+  
+      if (element) {
+        element.classList.toggle('hidden');
+      }
+    }
+  
+    function remElementVisibility(elementSelector) {
+      const element = document.querySelector(elementSelector);
+  
+      if (element) {
+        element.classList.add('hidden');
+      }
+    }
+  
+    function collectCheckedBoxes(selector) {
+      const checkboxes = Array.from(document.querySelectorAll(selector));
+      return checkboxes.filter(checkbox => checkbox.checked).map(checkbox => checkbox.name);
+    }
+  
+    function handlePrivacyConsent(action) {
+      const consentData = collectCheckedBoxes('.xmnal3910msjd341-consent-checkbox');
+      encodeCookieData("cookieVal_19954", JSON.stringify(consentData), 365);
+  
+      if (action === 'hide') {
+        remElementVisibility('.xmnal3910msjd341-options-panel');
+        remElementVisibility('.x981m3');
+      }
+    }
+  
+    document.querySelector('.xmnal3910msjd341-customize-btn').addEventListener('click', () => toggleElementVisibility('.xmnal3910msjd341-options-panel'));
+  
+    document.querySelector('.xmnal3910msjd341-submit-btn').addEventListener('click', () => {
+      remElementVisibility('.xmnal3910msjd341-options-panel');
+    });
+  
+    document.querySelector('.xmnal3910msjd341-agree-btn').addEventListener('click', () => handlePrivacyConsent('hide'));
+  
+  
+    const cookieCheckboxes = document.querySelectorAll('.xmnal3910msjd341-consent-checkbox')
+  
+    function saveCheckboxState() {
+      const checkboxesState = {};
+      cookieCheckboxes.forEach((input) => {
+        checkboxesState[input.name] = input.checked;
+      });
+      localStorage.setItem('checkboxesState', JSON.stringify(checkboxesState));
+    }
+  
+    cookieCheckboxes.forEach((input) => {
+      input.addEventListener('change', e => {
+        saveCheckboxState();
+      });
+    });
+  
+    function loadCheckboxState() {
+      const checkboxesState = JSON.parse(localStorage.getItem('checkboxesState'));
+      if (checkboxesState) {
+        cookieCheckboxes.forEach((input) => {
+          input.checked = checkboxesState[input.name] || false;
+        });
+      }
+    }
+  
+    document.addEventListener('DOMContentLoaded', loadCheckboxState);
+  
+    if (!decodeCookieData("cookieVal_19954")) {
+      toggleElementVisibility('.x981m3');
+      document.querySelector('.x981m3').classList.remove('hidden');
+    }
+  </script>
+
+    
+
+</body>
+</html>
